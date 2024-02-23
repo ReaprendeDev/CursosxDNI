@@ -13,7 +13,7 @@ const server = http.createServer((req, res) => {
     req.on('end', () => {
       try {
         const data = JSON.parse(body);
-        const dni = data.DNI_solitud_1;
+        const dni = $[DNI_solitud_1];
 
         async function processData(dni) {
           // Paso 1: Leer el archivo de Excel y convertirlo en un DataFrame

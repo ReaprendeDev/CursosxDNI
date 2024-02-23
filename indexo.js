@@ -29,9 +29,11 @@ const server = http.createServer((req, res) => {
           // Paso 3: Obtener los valores de real_c1 y real_c2 para el dni encontrado
           const real_c1 = filteredTable.toArray()[0][2];
           const real_c2 = filteredTable.toArray()[0][3];
-
+          const real_c3 = filteredTable.toArray()[0][4];
+          const real_c4 = filteredTable.toArray()[0][5];
+          // Pikachu
           // Paso 4: Juntar real_c1 y real_c2 en un único objeto llamado "real"
-          const responseJSON = { 'real_c1': real_c1, 'real_c2': real_c2 };
+          const responseJSON = { 'real_c1': real_c1, 'real_c2': real_c2, 'real_c3': real_c3, 'real_c4': real_c4   };
           res.setHeader('Content-Type', 'application/json');
           res.end(JSON.stringify(responseJSON));
         }

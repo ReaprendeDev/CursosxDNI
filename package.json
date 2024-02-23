@@ -1,4 +1,7 @@
 {
+  "scripts": {
+    "start": "node indexo.js"
+  },
   "dependencies": {
     "dataframe-js": "^1.4.4"
   }
